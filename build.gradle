@@ -1,0 +1,18 @@
+buildscript {
+    repositories {
+        maven { url MAVEN_REPOSITORY_URL }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.0-alpha3'
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url MAVEN_REPOSITORY_URL }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
